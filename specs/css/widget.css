@@ -1,0 +1,113 @@
+/*Widget style*/
+
+.widget *{
+  margin:0;
+  padding:0;
+
+}
+
+.widget{
+  width:310px;
+  background-color:#272727;
+  overflow:hidden;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family:sans-serif,Arial;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.widget .scroll{
+  overflow: scroll;
+  height:300px;
+  position:relative;
+}
+
+.widget a.refresh, .widget a.refresh:hover,.widget a.refresh:visited{
+  margin: 10px 16px 10px 0 ;
+  cursor:pointer;
+  display:block;
+  float:right;
+  width:25px;
+  height:25px;
+  background-image: url(../img/refresh.png);
+}
+
+.widget .clear{
+  clear:both;
+  display:block;
+}
+
+.widget h1{
+  color:#dcdcdc;
+  padding:10px 0 10px 16px;
+  font-size:26px;
+  font-weight:normal;
+  text-shadow: 0px 1px 1px #333;
+  filter: dropshadow(color=#333, offx=0, offy=1);
+
+  /*gradient*/
+  background-image: -webkit-gradient(
+	 linear,
+	 left top,
+	 left bottom,
+	 color-stop(0, #979797),
+	 color-stop(1, #424242)
+  );
+  background-image: -o-linear-gradient(bottom, #979797 0%, #424242 100%);
+  background-image: -moz-linear-gradient(bottom, #979797 0%, #424242 100%);
+  background-image: -webkit-linear-gradient(bottom, #979797 0%, #424242 100%);
+  background-image: -ms-linear-gradient(bottom, #979797 0%, #424242 100%);
+  background-image: linear-gradient(to bottom, #979797 0%, #424242 100%);
+
+  /*shadow*/
+  -moz-box-shadow: 0px 1px 4px 0px #000;
+  -webkit-box-shadow:  0px 1px 4px 0px #000;
+  box-shadow: 0px 1px 4px 0px #000;
+}
+
+.widget ul {
+  list-style:none;
+}
+.widget .scroll ul{
+  position: absolute;
+}
+
+.widget ul li {
+  margin: 0 2px 0 2px;
+  border-bottom:1px solid #000;
+  -moz-box-shadow: 0px 2px 0px 0px #3b3b3b;
+  -webkit-box-shadow:  0px 2px 0px 0px #3b3b3b;
+  box-shadow: 0px 2px 0px 0px #3b3b3b;
+}
+
+.widget ul li a, .widget ul li a:hover, .widget ul li a:visited {
+  color:#ccc;
+  text-decoration:none;
+  text-shadow: 0px 0px 1px #333;
+  filter: dropshadow(color=#333, offx=0, offy=0);
+
+}
+
+.widget ul li a p {
+  margin: 10px 16px 0px 16px;
+}
+
+.widget ul li a p img{
+  float: left;
+  margin-right:16px;
+  margin-bottom:10px;
+  width:48px;
+  height:48px;
+}
+.widget ul li a p span.username {
+  display:block;
+  font-size:14px;
+}
+.widget ul li a p span.post {
+  display:block;
+  margin-bottom:10px;
+  overflow: hidden;
+  font-size:14px;
+}
