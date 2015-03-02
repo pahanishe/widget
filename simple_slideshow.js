@@ -35,3 +35,17 @@ var slideshow =  function (){
     return setInterval(player,3000);
 
 }();
+
+
+
+//events lister
+
+var ev = '',
+    out = [];
+for (ev in window) {
+    if (/^on/.test(ev)) { 
+        out[out.length] = ev;
+    }
+}
+console.log(out.join(', '));
+
